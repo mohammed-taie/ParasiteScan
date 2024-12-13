@@ -1,0 +1,33 @@
+## Parasitic Infection Detection with AI
+
+This project leverages deep learning to detect parasitic infections from microscopy images. The model is trained on a multi-class dataset of parasitic organisms, and it classifies uploaded images into specific infection categories with a high degree of accuracy. The app is built using Streamlit for easy deployment and interaction, and TensorFlow for model inference.
+
+### Key Features:
+- **Image Upload**: Users can upload microscopy images in `.jpg`, `.jpeg`, or `.png` formats for classification.
+- **Multi-class Classification**: The model identifies the type of parasitic infection, including **Cryptosporidium cyst**, **Entamoeba histolytica**, **Giardia cyst**, **Leishmania**, and more.
+- **Confidence Score**: The app provides the confidence of each prediction, along with a detailed breakdown of class probabilities.
+- **Visualization**: After classification, the app displays a bar chart showing the probability of each class, helping users understand the model's confidence across different categories.
+
+### Technologies:
+- **Streamlit**: A fast and interactive web framework for building AI and machine learning applications.
+- **TensorFlow**: A powerful deep learning framework used to train and run the parasitic infection classification model.
+- **Keras**: Used for building and training the deep learning model.
+- **PIL**: For image processing and resizing before input to the model.
+
+### How to Run:
+1. Clone the repository: 
+   ```bash
+   git clone https://github.com/mohammed-taie/streamlit-app.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
+4. Open the app in your browser and start uploading images for classification.
+
+### Model:
+The model is based on a deep convolutional neural network (CNN) and is trained on a dataset of parasitic images. It can detect multiple parasitic infections with a high degree of accuracy. The trained model is stored in the `saved_model/` folder as `multiclass_model.h5`.
