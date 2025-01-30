@@ -65,7 +65,7 @@ class_names = [
 @st.cache_resource
 def load_model():
     try:
-        return tf.keras.models.load_model("saved_models/cnn_with_attention_modules.h5")
+        return tf.keras.models.load_model("saved_model/cnn_with_attention_modules.h5")
     except Exception as e:
         st.error(f"Error loading model: {e}")
         st.stop()
